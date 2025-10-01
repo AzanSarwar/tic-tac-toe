@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    
+
+    <div class="msg">
+    </div>
+    <div class="round">
+        <h3>Round</h3>
+        <div class="roundNo"></div>
+    </div>
+    <div class="wrap">
+
+
+        <div class="score">
+        <h3>Player X</h3>
+        <div class="digX"></div>
+    </div>
+<!--set timer for x-->
+<div class="x_timer"><h1>Timer:<span class="x-time" id = x-time>00</span></h1></div>
+
+    <div class="scr">
+        <h3>Player O</h3>
+        <div class="digO"></div>
+    </div>
+    <!--set timer for o-->
+    <div class="o_timer"><h1>Timer:<span class="o-time" id = o-time>00</span></h1></div>
+    <div class="sec"></div>
+        <div class="conatiner">
+            
+
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+        
+        <button class="newSet">Reset Game</button>
+    </div>
+    <!--send msg-->
+<div id="popMsg" class="dis-msg">
+    <h1 id="showWin"></h1>
+    <br>
+    <button class="btn" onclick="hideMessage(), newGame()" >Continue</button>
+</div>
+</body>
+<script src="practice.js"></script>
+</html>
